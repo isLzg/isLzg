@@ -1,7 +1,7 @@
-<p align="center" style="color: #3139FB">
+<p align="center">
   <samp>
-    <a href="https://islzg.vercel.app/" style="color: #3139FB">me</a> .
-    <a href="https://islzg.vercel.app/post" style="color: #3139FB">blog</a> .
-    <a href="https://t.me/+MmKrFhD6zdhhY2M1" style="color: #3139FB">telegram</a>
+    <a href="https://islzg.vercel.app/">me</a> .
+    <a href="https://islzg.vercel.app/post">blog</a> .
+    <a href="https://t.me/+MmKrFhD6zdhhY2M1">telegram</a>
   </samp>
 </p>
