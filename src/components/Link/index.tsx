@@ -4,9 +4,10 @@ import "./style.css"
 interface Props {
   path: string
   title: string
+  active?: boolean
 }
 
-const Link: FC<Props> = ({ path, title }) => {
+const Link: FC<Props> = ({ path, title, active }) => {
   const handleClick = (e: MouseEvent) => {
     const currentPath = window.location.pathname
     if (currentPath === path) {
@@ -15,7 +16,12 @@ const Link: FC<Props> = ({ path, title }) => {
   }
 
   return (
-    <a className="base-link" href={path} onClick={(e) => handleClick(e)}>
+    <a
+      className="base-link"
+      data-active={active}
+      href={path}
+      onClick={(e) => handleClick(e)}
+    >
       {title}
     </a>
   )

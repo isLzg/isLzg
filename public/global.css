@@ -14,6 +14,7 @@
 html[data-theme="light"]:root {
   --bg-color:rgb(250, 250, 250);
   --bg-content-color:rgb(255, 255, 255);
+  --bg-color-hover: rgb(235, 235, 235);
   --text-color: rgb(102, 102, 102);
   --text-color-hover: rgb(23, 23, 23);
   --border-color:rgba(0,0,0,0.08); ;
@@ -21,7 +22,8 @@ html[data-theme="light"]:root {
 
 html[data-theme="dark"]:root {
   --bg-color:rgb(0, 0, 0);
-  --bg-content-color:rgb(10, 10, 10) ;
+  --bg-content-color:rgb(10, 10, 10);
+  --bg-color-hover: rgb(41, 41, 41);
   --text-color: rgb(161, 161, 161);
   --text-color-hover: rgb(237, 237, 237);
   --border-color: hsla(0, 0%, 100%, 0.14);

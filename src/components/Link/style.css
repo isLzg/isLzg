@@ -1,8 +1,17 @@
 .base-link {
   color: var(--text-color);
   cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
 
   &:hover {
     color: var(--text-color-hover);
+    background-color: var(--bg-color-hover);
+  }
+
+  &[data-active="true"] {
+    color: var(--primary-color);
   }
 }

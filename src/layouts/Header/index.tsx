@@ -1,3 +1,4 @@
+import { type FC } from "react"
 import Link from "../../components/Link/index"
 import "./style.css"
 import { Github, Sun } from "lucide-react"
@@ -28,15 +29,24 @@ const links: Array<{
   },
 ]
 
-const Header = () => {
+interface IProps {
+  activeTab?: string
+}
+
+const Header: FC<IProps> = ({ activeTab }) => {
   return (
     <header className="base-header-container">
-      <nav className="base-nav">
+      <nav className="nav">
         {links.map(({ path, title }) => (
-          <Link key={path} path={path} title={title} />
+          <Link
+            active={title === activeTab}
+            key={path}
+            path={path}
+            title={title}
+          />
         ))}
       </nav>
-      <div className="base-link">
+      <div className="links">
         <Github />
         <Sun />
       </div>
