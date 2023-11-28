@@ -1,0 +1,15 @@
+.base-header-container {
+  background-color: var(--bg-content-color);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+
+  .base-nav, .base-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}

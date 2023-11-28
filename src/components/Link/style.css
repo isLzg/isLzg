@@ -1,0 +1,8 @@
+.base-link {
+  color: var(--text-color);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--text-color-hover);
+  }
+}
